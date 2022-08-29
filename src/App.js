@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Button from './UI elements/Button';
+import Circle from './UI elements/Circle';
 
 function App() {
+  const num = 0;
+  const btnsNames = [
+    'Decrease 5',
+    'Decrease 1',
+    'Reset',
+    'Increase 1',
+    'Increase 5',
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Circle num={num} />
+      <div className='container-btns'>
+        {btnsNames.map(btnName => (
+          <Button key={btnName}>{btnName}</Button>
+        ))}
+      </div>
     </div>
   );
 }
