@@ -6,4 +6,4 @@ Simple Redux app that makes basic calculations.
 
 1. Clone the repository
 2. Install dependencies with `npm install`
-3. Run app locally with `npm start`å
+3. Run app locally with `npm start`
